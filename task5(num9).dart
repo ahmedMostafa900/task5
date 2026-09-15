@@ -1,3 +1,5 @@
+// Use where to find all keys that have length 4.
+
 void main(){
 
   Map<String,String> n={
@@ -9,7 +11,7 @@ void main(){
     
   };
 
-n.removeWhere((key, value) => key.length < 4);
+n.removeWhere((key, value) => key.length != 4);
 print(n);
 
 
